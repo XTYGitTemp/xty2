@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三种样式</title>
+    <link rel="stylesheet" href="4.css">
+    <style>
+        #wrapper1 {
+            background-color: deeppink;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="www.baidu.com">百度官网</a>
+    <div id="wrapper1" style="background-color: blue;
+    width: 400px; 
+    height: 40px;
+    border: 20px;">
+    </div>
+    <div id="wrapper2" style="background-color: rgb(214, 226, 43); 
+    width: 400px; 
+    height: 40px; 
+    border: 20px;">
+    </div>
+
+    <i>内容</i>
+    <span style="width: 400px; font-size: 13px; color: red;">
+        <strong class="money" style="font-size: 15px;">
+            8405.57
+        </strong>
+    </span><br>
+
+    <textarea name="content" id="" cols="50" rows="5"></textarea>
+    <select name="city" id="">
+        <option value="0">请选择</option>
+        <option value="dg">东莞</option>
+        <option value="gz">广州</option>
+    </select><br><br>
+
+    <input type="file" name="photo">
+
+    <input type="date" name="date">
+    <input type="time" name="time">
+    <input type="datetime-local" name="datetime-local">
+    <input type="month" name="month">
+    <input type="week" name="week">
+</body>
+</html>
