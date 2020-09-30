@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>波纹按钮</title>
+    <style>
+        .button{
+            position: relative;
+            background-color: #ae00ff;
+            border: none;
+            font-size: 28px;
+            color: #ff9d00;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            -webkit-transition-duration: 0.2s;
+            /* safari */
+            transition-duration: 0.2s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .button:after{
+            content: "";
+            background: #38f538;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s;
+        }
+        .button:active:after{
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition:0s;
+        }
+    </style>
+</head>
+<body>
+    <h2>波纹按钮</h2>
+    <button class="button">请点击我<button>
+</body>
+<html>

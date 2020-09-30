@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY 按钮</title>
+    <style>
+        h1 {
+            background-color: #ff00ff;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+            /* Safari */
+            text-decoration: none;
+            outline: none;
+            color: #ff0000;
+            background-color: rgb(5, 238, 255);
+            border: none;
+            border-radius: 50px;
+            box-shadow: #ff8800;
+        }
+        .button:hover {
+            background-color: blue;
+        }
+        .button:active {
+            background-color: green;
+            box-shadow: 0 5px yellow;
+            transform: translateY(4px);
+        }
+        .button:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s;
+        }
+    </style>
+</head>
+<body>
+    <h1>按钮动画</h1>
+
+    <button class="button">请点击我</button>
+</body>
+</html>
