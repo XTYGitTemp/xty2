@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: green;
+
+        }
+        .box1 {
+            background-color: red;
+            color: greenyellow;
+            width: 200px;
+            height: 200px;
+            left: 100px;
+            top: 100px;
+            /* position: absolute; */
+            /* position: static; */
+        }
+        .wrapper {
+            background-color: blue;
+            height: 200px;
+            width: 500px;
+            margin: 100px;
+            /* position: relative; */
+        }
+        .parent1 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 30px;
+            /* position: relative; */
+        }
+        .parent2 {
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 30px;
+        }
+        .son1 {
+            background-color: #ffffff;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+        }
+        .son2 {
+            background-color: #000000;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">江西软件大学</div>
+    <div class="wrapper">
+        <div class="parent1">
+            <div class="son1"></div>
+            
+        </div>
+        <div class="parent2">
+            <div class="son2"></div>
+        </div>
+    </div>
+</body>
+</html>
