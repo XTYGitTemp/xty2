@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: green;
+        }
+        #main {
+            background-color: yellow;
+            height: 500px;
+            width: 800px;
+            /* margin: 0 auto; */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -400px;
+            margin-top: -250px;
+        }
+        .tabLeft {
+            background-color: red;
+            width: 30%;
+            height: 90%;
+            position: absolute;
+            top: 5%;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        .menu a {
+            text-decoration: none;
+        }
+        .menu {
+            background-color: purple;
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 20px;
+        }
+        .menu a {
+            display: block;
+            width: 100%;
+            height: 40px;
+        }
+        .menu a:active {
+            background-color: aqua;
+        }
+        .tabLeft div:first-child {
+            background-color: blue;
+            margin-top: 70px;
+        }
+        .tabRight {
+            background-color:white;
+            float: right;
+            width: 70%;
+            height: 90%;
+            position: relative;
+            top: 5%;
+        }
+        
+        .news,.home,.department,.teachers,.teaching {
+            display: none;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        p {
+            text-indent: 2em;
+        }
+        .home {
+            background-color: darkgray;
+        }
+        .news {
+            background-color: cadetblue;
+        }
+        .department {
+            background-color: springgreen;
+        }
+        .teachers {
+            background-color: violet;
+        }
+        .teaching {
+            background-color: yellowgreen;
+        }
+        .home .first {
+            width: 100%;
+            height: 140px;
+        }
+        .home .first img {
+            width: 120px;
+            display: inline-block;
+           
+        }
+        .home .first .one {
+            display: inline-block;
+            width: 430px;
+        }
+        .news img {
+            width: 400px;
+            height: 250px;
+            margin: auto;
+            position: absolute;
+            /* margin: 0 auto; */
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin-top: 20px;
+            /* border: 10px solid red; */
+
+        }
+        .news p {
+            position: relative;
+            bottom: -65%;
+            text-indent: 2em;
+        }
+        .department img {
+            position: absolute;
+            margin: 10px 60px;
+        }
+        .department p {
+            position: relative;
+            top: 100px;
+        }
+        .teachers img {
+            position: absolute;
+            width: 500px;
+            height: 200px;
+            margin: 10px 30px;
+        }
+        .teachers p {
+            position: relative;
+            top: 220px;
+        }
+        .teaching img {
+            position: absolute;
+            width: 300px;
+            margin: 10px 100px;
+        }
+        .teaching p {
+            position: relative;
+        }
+        .tabRight div:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper" id="main">
+        <div class="tabLeft">
+            <div class="menu" id="home1">
+                <a href="#home" class="">学校概况</a>
+            </div>
+            <div class="menu" id="news1">
+                <a href="#news" class="">新闻中心</a>
+            </div>
+            <div class="menu" id="department1">
+                <a href="#department" class="">机构设置</a>
+            </div>
+            <div class="menu" id="teachers1">
+                <a href="#teachers" class="">师资队伍</a>
+            </div>
+            <div class="menu" id="teaching1">
+                <a href="#teaching" class="">教育教学</a>
+            </div>
+        </div>
+        <div class="tabRight">
+            <div id="home" class="home">
+                <div class="first">
+                    <img src="../../../images/校名图标1.png" alt="">
+                <p class="one">
+                    江西软件职业技术大学是全国第一所软件职业技术大学，由国家软件百强企业先锋软件股份有限公司于2003年创办，成立之初就成功入选全国35所示范性软件职业技术学院。2018年12月18日，教育部批准学校升格为本科层次职业学校，成为全国首批15所本科层次职业教育高校之一。2019年5月27日，教育部批复更名为江西软件职业技术大学。
+                </p>
+                </div>
+                <p>
+                    办学以来，学校始终坚持职业教育的属性和特色，牢记“学好软件、报效祖国”使命，秉承“创业创新、知识管理”校训，坚持“校企融合，产学互动”办学模式，实践“三好一专、十一工程”人才培养体系，形成了“用企业家育人理念培养学生”“请工程师当老师”“拿真实的项目进行实训”的校企深度融合发展思路。学校以国产软件为核心，在交通、能源、卫生、教育以及智慧城市等领域为社会累计培养了五万余名软件优秀人才。近年来，学校先后荣获全省高校先进基层党组织、全省高校思想政治工作先进集体，江西省征兵工作先进单位、全省综治工作先进单位，全省普通高校毕业生就业工作优秀等级学校。
+                </p>
+                
+            </div>
+            <div id="news" class="news">
+                <img src="../../../images/news01.jpg" alt="">
+                <p>2020年10月24日，江西软件职业技术大学区块链活动节隆重启幕。此次区块链活动节是学习习近平总书记“10·24”讲话精神的重要活动，是先锋软件集团和江西软件大学自2015年来，在区块链领域探索出的具有纪念意义的活动，它生动地诠释了江西软件大学“学习的先锋、运动的先锋、快乐的先锋、创新的先锋”的校园文化精神。</p>
+            </div>
+            <div id="department" class="department">
+                <img src="../../../images/校名图标2.png" alt="">
+                <p>软件工程学院现有在校生2000余人。开设本科专业4个，即：软件工程、智能控制技术、计算机应用工程、大数据技术与应用；开设了专科专业5个，即：软件技术、嵌入式技术与应用、人工智能技术服务、工业机器人技术、大数据技术与应用。软件技术专业根据市场用人需求，设置了五个专业方向，即（软件技术(Web软件设计)、软件技术(移动互联网开发技术)、软件技术(网络游戏开发方向)
+                    、软件技术(软件测试方向) 、软件技术（Ui设计）等）。 学院共有专任教师74名（不含思政部和基础教学部），其中正高职称 8
+                    人，占总数的10.1%、副高职称13人，占总数的17.8%，中级职称24人，占总数的32.8%。具有硕士学位以上的21人，占总数的28.8%，本科以上学历的52人，占总数的70%。有江西省中青年学科带头人1名，江西省高校中青年骨干教师2名。</p>
+            </div>
+            <div id="teachers" class="teachers">
+                <img src="../../../images/先锋小镇.jpg" alt="">
+               <p> 学校自创办以来，认真贯彻落实党中央、国务院关于人才工作的一系列方针、政策，坚持“以人为本”，实施“人才强校”战略，优化人才成长环境，创新人才工作机制。学校师资队伍的结构得到了进一步优化，数量和质量得到了进一步提高，实现了师资队伍建设“十二五”规划的目标，为学校“十三五”期间的发展提供了强有力的师资保证。
+                    根据师资建设发展的需要，学校坚持“加速培养，积极引进”的原则，出台并实施了人才引进、培养、考核、晋升、管理办法，建立了科学合理的选人、用人、留人的机制，围绕“事业留人，环境留人，待遇留人”的人才观，广开渠道，加大投入力度，师资队伍建设不断走上新的台阶。
+                    中国科学院院士李衍达和中国工程院院士倪光南为学校名誉校长。</p>
+            </div>
+            <div id="teaching" class="teaching">
+                <p>我校由国家软件百强企业先锋软件公司创办，始建于2003年，2018年经教育部批准在原有的基础上成功升格为职业本科院校， 2019年5月更名为江西软件职业技术大学，成为全国首批15所职业技术大学之一，也是中国第一所软件职业技术大学。 自办学以来，学校秉承“创业创新，知识管理”的校训；坚持“校企融合，产学互动”的 办学模式； 实施“三好一专，十一工程”的育人理念；将“教的都是新的，学的都是用的”贯穿于教学之中，请工程师当老师，用真实的项目实训；培养出了一批批高素质、深受社会欢迎的应用技术技能人才。</p>
+                <img src="../../../images/江软操场.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
