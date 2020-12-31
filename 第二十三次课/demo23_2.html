@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+</head>
+<body>
+    <div id="wrapper" style="background-color: green; width: 200px; height: 200px;">
+
+    </div>
+    <div id="wrapper2">
+        <p>
+            <label for="">登录名：</label>
+            <input type="text" id="myname">
+        </p>
+        <p>
+            <label for="">密码：</label>
+            <input type="text" id="mypassword">
+        </p>
+    </div>
+
+    <script>
+        console.log(typeof $);
+        $("#wrapper").click(function(){
+            //$("#wrapper").css("background-color","red");
+            //alert($("#wrapper").css("background-color"));
+            if("rgb(255, 0, 0)" == $("#wrapper").css("background-color")){
+                //alert($("#wrapper").css("background-color"));
+                $("#wrapper").css("background-color","green");
+            }
+            else if("rgb(0, 128, 0)" == $("#wrapper").css("background-color")){
+                //alert($("#wrapper").css("background-color"));
+                $("#wrapper").css("background-color","red");
+            }
+        });
+
+
+    </script>
+</body>
+</html>
